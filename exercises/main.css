@@ -1,6 +1,16 @@
+
+/*******************
+ * General
+ *******************/
+
 section {
 	margin: 0 0 80px;
 }
+
+
+/*******************
+ * Lists
+ *******************/
 
 .list-reset {
 
@@ -16,4 +26,21 @@ section {
 
 .list-vertical li {
 	
+}
+
+/*******************
+ * Links
+ *******************/
+
+a {
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+
+}
+
+a:active {
+
 }
