@@ -2,6 +2,9 @@
 /*******************
  * General
  *******************/
+body {
+	font-family: helvetica, arial, sans-serif
+}
 
 section {
 	margin: 0 0 80px;
@@ -13,11 +16,13 @@ section {
  *******************/
 
 .list-reset {
-
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
 
 .list-reset li {
-
+ 
 }
 
 .list-vertical {
@@ -25,22 +30,42 @@ section {
 }
 
 .list-vertical li {
-	
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+.list-menu li a {
+	display: block;
+	padding: 10px 15px;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 0 2px rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+.list-menu li a:hover,
+.list-menu li a:focus {
+	background: green;
+	color: black;
 }
 
 /*******************
  * Links
  *******************/
 
-a {
-  text-decoration: underline;
+a, 
+a:visited {
+	color:lightcoral;
 }
 
 a:hover,
 a:focus {
-
+	color:#00CED1;
 }
 
 a:active {
-
+  text-decoration: none;
+  color:#00CED1;					
 }
