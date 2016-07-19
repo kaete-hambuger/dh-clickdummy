@@ -2,6 +2,7 @@
 /*******************
  * General
  *******************/
+body {font-family: helvetica, arial, sans-serif;}
 
 section {
 	margin: 0 0 80px;
@@ -13,7 +14,9 @@ section {
  *******************/
 
 .list-reset {
-
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
 }
 
 .list-reset li {
@@ -23,24 +26,44 @@ section {
 .list-vertical {
 
 }
-
+/*v.a. gut für klickpfade, um abstand zwischen horizontalen punkten zu vergrößern
+(z.b. für filter-liste usw)*/
 .list-vertical li {
-	
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.list-menu li a {
+	display: block;
+	padding: 10px 15px;
+	background-color:#f08080;
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 0 2px rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+.list-menu li a:hover,
+.list-menu li a:focus {
+	background-color: white;
+	color: orange;
 }
 
 /*******************
  * Links
  *******************/
 
-a {
-  text-decoration: underline;
+a, 
+a:visited {
+ 	color: lightcoral;
 }
 
 a:hover,
 a:focus {
-
+	color: #00ced1;
 }
 
 a:active {
-
+	text-decoration: none; 
+	color: #00ced1;
 }
