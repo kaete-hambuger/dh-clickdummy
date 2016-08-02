@@ -36,17 +36,24 @@ section {
 .list-menu li a {
 	display: block;
 	padding: 10px 15px;
-	background-color:#f08080;
-	color: white;
+	background-color:#BC8CAB;
+	color: #BFC6D6;
 	font-weight: bold;
 	text-shadow: 0 0 2px rgba(0,0,0,0.8);
 	text-decoration: none;
+/*z-index: 2;*/
+}
+
+}
+.list-menu li ul {
+	z-index: 100;
 }
 
 .list-menu li a:hover,
 .list-menu li a:focus {
-	background-color: white;
-	color: orange;
+	background-color: #BC8CAB;
+	color: #CEC3CF;
+	border-bottom: 3px solid #5D6880;
 }
 
 /*******************
@@ -55,12 +62,12 @@ section {
 
 a, 
 a:visited {
- 	color: lightcoral;
+ 	color: #5D6880;
 }
 
 a:hover,
 a:focus {
-	color: #00ced1;
+	color: #5D6880;
 }
 
 a:active {
