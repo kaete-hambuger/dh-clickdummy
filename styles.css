@@ -6,6 +6,10 @@ html, body {
   color: #0C0C0C;
 }
 
+footer {
+  color: grey;
+}
+
 .container {
   display: block;
   width: 1200px;
