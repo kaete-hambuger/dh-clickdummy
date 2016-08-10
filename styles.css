@@ -6,6 +6,14 @@ html, body {
   color: #0C0C0C;
 }
 
+
+footer {
+  background-color: #A4A4A4;
+  color: #fff;
+  height: 120px;
+  font-size: 13px;
+}
+
 /*
  * Resets
  */
