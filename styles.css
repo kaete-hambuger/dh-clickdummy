@@ -9,13 +9,29 @@ html, body {
 
 footer {
   background-color: #A4A4A4;
-  color: #fff;
+  color: #606060;
   height: 120px;
-  font-size: 13px;
+  font-size: 17px;
 }
+
 
 main {
   min-height: 80vh;
+}
+
+a {
+  text-decoration: none;
+  color: #243F91;
+  font-weight: 400;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+a:active {
+  opacity: 0.6;
 }
 
 /*
@@ -43,6 +59,44 @@ main {
 
 .space-vertical {
   margin: 32px 0;
+}
+
+.row {
+  margin: 0 -16px;
+}
+
+.cell {
+  display: inline-block;
+  padding: 0 16px;
+  float: left;
+}
+
+.cell-50 {
+  width: 50%;
+}
+
+.cell-33 {
+  width: 33.333333%;
+}
+
+.list-vertical {
+  margin: 0 -16px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-item {
+  display: inline-block;
+  padding: 0 16px;
+}
+
+.float-right {
+  float: right;
+}
+
+.quote {
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 /**
@@ -89,6 +143,11 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover,
+nav a:focus {
+  text-decoration: none;
+}
+
 nav ul li {
   position: relative;
   display: inline-block;
@@ -96,7 +155,7 @@ nav ul li {
 }
  
 nav ul li:hover {
-  background: #A4A4A4;
+  background: #243F91;
 }
  
 nav ul li a {
