@@ -6,9 +6,25 @@ html, body {
   color: #0C0C0C;
 }
 
+
 footer {
-  color: grey;
+  background-color: #A4A4A4;
+  color: #fff;
+  height: 120px;
+  font-size: 13px;
 }
+
+/*
+ * Resets
+ */
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+/*
+ * Helper Classes
+ */
 
 .container {
   display: block;
@@ -16,11 +32,20 @@ footer {
   margin: 0 auto;
 }
 
+.container:before {
+  content: " ";
+  display: table;
+}
+
+.space-vertical {
+  margin: 32px 0;
+}
+
 /**
  * Header
  */
 
- img.header-image {
+img.header-image {
   display: block;
   margin: 10px auto;
 }
@@ -32,7 +57,6 @@ footer {
  */
 
 nav {
-  float: left;
   width: 100%;
   background: #3a3a3a;
   font-size: 16px;
@@ -54,21 +78,16 @@ nav ul {
   margin: 0;
   padding: 0;
 }
- 
+
 nav a {
   display: block;
   color: #fff;
   text-decoration: none;
 }
 
-/*
-***********************************************************************************
-DRITTER SCHRITT
-*/
-
 nav ul li {
   position: relative;
-  float: left;
+  display: inline-block;
   list-style: none;
 }
  
