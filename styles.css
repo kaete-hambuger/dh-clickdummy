@@ -158,7 +158,8 @@ nav ul li {
   list-style: none;
 }
  
-nav ul li:hover {
+nav ul li:hover,
+nav ul li.active {
   background: #243F91;
 }
  
